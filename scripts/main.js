@@ -22,8 +22,10 @@ const NavBar = () => {
 const WelcomeSection = () => {
     return (
         <section id="welcome-section">
+        <div className="title">
             <h1>Hey I am Leandro</h1>
             <p>web developer</p>
+        </div>
         </section>
     )
 };
