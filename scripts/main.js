@@ -3,16 +3,16 @@ const { createRoot } = ReactDOM;
 
 const NavBar = () => {
     return (
-        <nav id="navbar" class="nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="#welcome-section">About</a>
+        <nav id="navbar" className="nav">
+            <ul className="nav-list">
+                <li className="nav-item">
+                    <a className="nav-link" href="#welcome-section">About</a>
                 </li>
-                <li>
-                    <a href="#projects">Work</a>
+                <li className="nav-item">
+                    <a className="nav-link" href="#projects">Work</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
+                <li className="nav-item">
+                    <a className="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -30,39 +30,39 @@ const WelcomeSection = () => {
 
 const Projects = () => {
     return (
-        <section id="projects" class="projects-section">
-            <h2 class="projects-section-header">These are some of my projects</h2>
-            <div class="project-grid">
-                <a class="project project-tile" href="https://leandr0sms.github.io/excursion/" target="_blank">
-                    <img class="project-image" src="./img/camp.jpg" alt="project"/>
-                    <p class="project-title">
-                        <span class="code"></span>
+        <section id="projects" className="projects-section">
+            <h2 className="projects-section-header">These are some of my projects</h2>
+            <div className="project-grid">
+                <a className="project project-tile" href="https://leandr0sms.github.io/excursion/" target="_blank">
+                    <img className="project-image" src="./img/camp.jpg" alt="project"/>
+                    <p className="project-title">
+                        <span className="code"></span>
                         Excursion
-                        <span class="code"></span>
+                        <span className="code"></span>
                     </p>
                 </a>
-                <a class="project project-tile" href="https://leandr0sms.github.io/ernst-tribute/" target="_blank">
-                    <img class="project-image" src="./img/ernst-gotsh.jpg" alt="project"/>
-                    <p class="project-title">
-                        <span class="code"></span>
+                <a className="project project-tile" href="https://leandr0sms.github.io/ernst-tribute/" target="_blank">
+                    <img className="project-image" src="./img/ernst-gotsh.jpg" alt="project"/>
+                    <p className="project-title">
+                        <span className="code"></span>
                         Tribute page
-                        <span class="code"></span>
+                        <span className="code"></span>
                     </p>
                 </a>
-                <a class="project project-tile" href="https://leandr0sms.github.io/Interest-Calculator-IBM/" target="_blank">
-                    <img class="project-image" src="./img/calculator.png" alt="project"/>
-                    <p class="project-title">
-                        <span class="code"></span>
+                <a className="project project-tile" href="https://leandr0sms.github.io/Interest-Calculator-IBM/" target="_blank">
+                    <img className="project-image" src="./img/calculator.png" alt="project"/>
+                    <p className="project-title">
+                        <span className="code"></span>
                         Interest Calculator
-                        <span class="code"></span>
+                        <span className="code"></span>
                     </p>
                 </a>
-                <a class="project project-tile" href="https://leandr0sms.github.io/FreeCodeCamp-projects/matutu-landing-page/index.htm" target="_blank">
-                    <img class="project-image" src="./img/GRAFISMO_DUMATUTU_04.jpg" alt="project"/>
-                    <p class="project-title">
-                        <span class="code"></span>
+                <a className="project project-tile" href="https://leandr0sms.github.io/FreeCodeCamp-projects/matutu-landing-page/index.htm" target="_blank">
+                    <img className="project-image" src="./img/GRAFISMO_DUMATUTU_04.jpg" alt="project"/>
+                    <p className="project-title">
+                        <span className="code"></span>
                         Landing Page
-                        <span class="code"></span>
+                        <span className="code"></span>
                     </p>
                 </a>
             </div>
@@ -72,25 +72,25 @@ const Projects = () => {
 
 const Contact = () => {
     return (
-        <section id="contact" class="contact-section">
-            <div class="contact-header">
+        <section id="contact" className="contact-section">
+            <div className="contact-header">
                 <h2>Let`s Work...</h2>
             </div>
-            <div class="contact-links">
-                <a id="profile-link" class="contact-detail" href="https://github.com/Leandr0SmS" target="_blank">
-                    <i class="fa-brands fa-github"></i>
+            <div className="contact-links">
+                <a id="profile-link" className="contact-detail" href="https://github.com/Leandr0SmS" target="_blank">
+                    <i className="fa-brands fa-github"></i>
                     GitHub
                 </a>
-                <a class="contact-detail" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
+                <a className="contact-detail" target="_blank">
+                    <i className="fa-brands fa-instagram"></i>
                     Instagram
                 </a>
-                <a class="contact-detail" href="https://www.freecodecamp.org/LeandroSmS" target="_blank">
-                    <i class="fa-brands fa-free-code-camp"></i>
+                <a className="contact-detail" href="https://www.freecodecamp.org/LeandroSmS" target="_blank">
+                    <i className="fa-brands fa-free-code-camp"></i>
                     FreeCodeCamp
                 </a>
-                <a class="contact-detail" href="mailto:leandrosimoesms@gmail.com" target="_blank">
-                    <i class="fa-solid fa-at"></i>
+                <a className="contact-detail" href="mailto:leandrosimoesms@gmail.com" target="_blank">
+                    <i className="fa-solid fa-at"></i>
                     Send a mail
                 </a>
             </div>

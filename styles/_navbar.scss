@@ -1,0 +1,32 @@
+.nav {
+    background-color: $burnt-orange;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+}
+.nav-item {
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-shadow: 0.5rem 0.5rem 1rem #5d5d5d;//2px 2px 1px #0f0f0f;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    color: $crem;
+    font-size: 1.6em;
+    &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+        text-shadow: 0.1rem 0.1rem 2rem #ffffff;
+    }
+}
