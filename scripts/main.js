@@ -32,9 +32,6 @@ const WelcomeSection = () => {
     )
 };
 
-
-
-
 const Projects = ({ projects }) => {
 
     const projectsLinks = projects.map(p => {
@@ -68,19 +65,23 @@ const Contact = () => {
             </div>
             <div className="contact-links">
                 <a id="profile-link" className="contact-detail" href="https://github.com/Leandr0SmS" target="_blank">
-                    <i className="fa-brands fa-github"></i>
+                    <img className="icon" src="../resources/icons/github.png" alt=""/>
                     GitHub
                 </a>
-                <a className="contact-detail" target="_blank">
-                    <i className="fa-brands fa-instagram"></i>
+                <a className="contact-detail" target="_blank" href="https://www.instagram.com/leandr0simoes/">
+                    <img className="icon" src="../resources/icons/instagram.png" alt=""/>
                     Instagram
                 </a>
                 <a className="contact-detail" href="https://www.freecodecamp.org/LeandroSmS" target="_blank">
-                    <i className="fa-brands fa-free-code-camp"></i>
+                    <img className="icon" src="../resources/icons/freecodecamp.png" alt=""/>
                     FreeCodeCamp
                 </a>
+                <a className="contact-detail" href="https://www.linkedin.com/in/leandrosimoesms/" target="_blank">
+                    <img className="icon" src="../resources/icons/linkedin.png" alt=""/>
+                    linkedin
+                </a>
                 <a className="contact-detail" href="mailto:leandrosimoesms@gmail.com" target="_blank">
-                    <i className="fa-solid fa-at"></i>
+                    <img className="icon" src="../resources/icons/email.png" alt=""/>
                     Send a mail
                 </a>
             </div>
