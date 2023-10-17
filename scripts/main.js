@@ -1,3 +1,5 @@
+import { projectsData } from "../resources/projects.js";
+
 const { useState, useEffect } = React;
 const { createRoot } = ReactDOM;
 
@@ -30,43 +32,29 @@ const WelcomeSection = () => {
     )
 };
 
-const Projects = () => {
+
+
+
+const Projects = ({ projects }) => {
+
+    const projectsLinks = projects.map(p => {
+        return (
+            <a className="project project-tile" href={p.url} target="_blank" key={p.id}>
+                <img className="project-image" src={`../resources/images/${p.image}`} alt="project"/>
+                <p className="project-title">
+                    <span className="code"></span>
+                    {p.title}
+                    <span className="code"></span>
+                </p>
+            </a>
+        )
+    });
+    
     return (
         <section id="projects" className="projects-section">
             <h2 className="projects-section-header">These are some of my projects</h2>
             <div className="project-grid">
-                <a className="project project-tile" href="https://leandr0sms.github.io/excursion/" target="_blank">
-                    <img className="project-image" src="./img/camp.jpg" alt="project"/>
-                    <p className="project-title">
-                        <span className="code"></span>
-                        Excursion
-                        <span className="code"></span>
-                    </p>
-                </a>
-                <a className="project project-tile" href="https://leandr0sms.github.io/ernst-tribute/" target="_blank">
-                    <img className="project-image" src="./img/ernst-gotsh.jpg" alt="project"/>
-                    <p className="project-title">
-                        <span className="code"></span>
-                        Tribute page
-                        <span className="code"></span>
-                    </p>
-                </a>
-                <a className="project project-tile" href="https://leandr0sms.github.io/Interest-Calculator-IBM/" target="_blank">
-                    <img className="project-image" src="./img/calculator.png" alt="project"/>
-                    <p className="project-title">
-                        <span className="code"></span>
-                        Interest Calculator
-                        <span className="code"></span>
-                    </p>
-                </a>
-                <a className="project project-tile" href="https://leandr0sms.github.io/FreeCodeCamp-projects/matutu-landing-page/index.htm" target="_blank">
-                    <img className="project-image" src="./img/GRAFISMO_DUMATUTU_04.jpg" alt="project"/>
-                    <p className="project-title">
-                        <span className="code"></span>
-                        Landing Page
-                        <span className="code"></span>
-                    </p>
-                </a>
+               {projectsLinks}
             </div>
         </section>
     )
@@ -105,7 +93,7 @@ const App = () => {
         <React.Fragment>
             <NavBar/>
             <WelcomeSection/>
-            <Projects/>
+            <Projects projects={projectsData} />
             <Contact/>
         </React.Fragment>
     )
