@@ -26,7 +26,7 @@ const WelcomeSection = () => {
         <section id="welcome-section">
         <div className="title">
             <h1>Hey I am Leandro</h1>
-            <p>web developer</p>
+            <p id="subtitle">web developer</p>
         </div>
         </section>
     )
