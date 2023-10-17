@@ -1,4 +1,4 @@
-import { projectsData } from "../resources/projects.js";
+import { projectsData } from "./projects.js";
 
 const { useState, useEffect } = React;
 const { createRoot } = ReactDOM;
