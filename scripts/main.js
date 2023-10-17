@@ -39,12 +39,12 @@ const Projects = ({ projects }) => {
 
     const projectsLinks = projects.map(p => {
         return (
-            <a className="project project-tile" href={p.url} target="_blank" key={p.id}>
+            <a className="project" href={p.url} target="_blank" key={p.id}>
                 <img className="project-image" src={`../resources/images/${p.image}`} alt="project"/>
                 <p className="project-title">
-                    <span className="code"></span>
-                    {p.title}
-                    <span className="code"></span>
+                    <span className="code">{'< '}</span>
+                    {p.name}
+                    <span className="code">{' />'}</span>
                 </p>
             </a>
         )
