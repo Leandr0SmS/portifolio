@@ -215,6 +215,29 @@
   max-width: 3rem;
 }
 
+@media (max-width: 655px) {
+  .contact-section {
+    padding: 0 2rem;
+  }
+  .contact-header {
+    font-size: 1.5em;
+  }
+  .contact-links {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .contact-detail {
+    font-size: 1rem;
+    padding: 3%;
+  }
+  .contact-detail:hover {
+    transform: translateY(8px);
+    transition: transform 0.3s ease-out;
+  }
+  .icon {
+    max-width: 2rem;
+  }
+}
 *, *::after, *::before {
   box-sizing: border-box;
 }
