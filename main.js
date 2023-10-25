@@ -26,11 +26,11 @@ const WelcomeMoreInfo = () => {
         <div id="more_info">
             <img id="more_info_img" src="./resources/images/avatar.png" alt="profile picture"/>
             <p  id="more_info_text">
-            Sou um desenvolvedor web com experiência em projetos pessoais, front-end e back-end, 
-            que adora novos desafios. Sou um profissional em transição de carreira, possuo experiência 
-            profissional como piloto comercial que me possibilitou atuar com sistemas complexos, 
-            gestão humana e gestão de riscos. 
-            Posso me adaptar bem sob pressão e estou motivado por aprender e contribuir.
+                I am a web developer with experience in personal projects, front-end and back-end,
+                who loves new challenges. I am a professional in career transition, I have experience
+                professional as a commercial pilot that allowed me to work with complex systems,
+                human management and risk management.
+                I can adapt well under pressure and I am motivated to learn and contribute.
             </p>
         </div>
     )
@@ -46,7 +46,7 @@ const WelcomeSection = () => {
 
     return (
         <section id="welcome-section">
-        <div className="title">
+        <div className={toggle ? "title expand" : "title"}>
             <h1>Hey I am Leandro</h1>
             <p id="subtitle">web developer</p>
             <img 

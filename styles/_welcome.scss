@@ -11,6 +11,14 @@
 .title {
     text-align: center;
     font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.expand {
+    padding: 5rem 1rem;
 }
 
 #subtitle {
@@ -25,7 +33,7 @@
 }
 
 #more_info {
-    font-size: 0.7em;
+    font-size: 0.55em;
     max-width: 50rem;
     padding: 1rem 3rem;
 }
@@ -49,5 +57,6 @@
     }
     #more_info {
         padding: 1rem 1rem;
+        font-size: 0.4em;
     }
 }
