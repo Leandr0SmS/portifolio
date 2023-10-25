@@ -21,12 +21,45 @@ const NavBar = () => {
     )
 };
 
+const WelcomeMoreInfo = () => {
+    return (
+        <div id="more_info">
+            <img id="more_info_img" src="./resources/images/avatar.png" alt="profile picture"/>
+            <p  id="more_info_text">
+            Sou um desenvolvedor web com experiência em projetos pessoais, front-end e back-end, 
+            que adora novos desafios. Sou um profissional em transição de carreira, possuo experiência 
+            profissional como piloto comercial que me possibilitou atuar com sistemas complexos, 
+            gestão humana e gestão de riscos. 
+            Posso me adaptar bem sob pressão e estou motivado por aprender e contribuir.
+            </p>
+        </div>
+    )
+};
+
 const WelcomeSection = () => {
+
+    const [toggle, setToggle] = useState(false);
+
+    const handleToggle = () => {
+        setToggle(t => !t)
+    };
+
     return (
         <section id="welcome-section">
         <div className="title">
             <h1>Hey I am Leandro</h1>
             <p id="subtitle">web developer</p>
+            <img 
+                id="expand_icon" 
+                src={toggle ? "./resources/icons/expand_less_icon.svg" : "./resources/icons/expand_more_icon.svg"} 
+                alt="expanded arrow icon" 
+                onClick={handleToggle}
+            />
+            {
+                toggle
+                ? <WelcomeMoreInfo/>
+                : undefined
+            }
         </div>
         </section>
     )

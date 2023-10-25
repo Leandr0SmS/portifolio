@@ -17,8 +17,37 @@
     font-size: 1em;
 }
 
+#expand_icon {
+    width: 3rem;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#more_info {
+    font-size: 0.7em;
+    max-width: 50rem;
+    padding: 1rem 3rem;
+}
+
+#more_info_img {
+    border-radius: 50%;
+    width: 20%;
+    min-width: 13rem;
+    max-width: 25rem;
+}
+
+#more_info_text {
+    margin-top: 2rem;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+}
+
 @media (max-width: 655px) {
     .title {
         font-size: 1.5em;
+    }
+    #more_info {
+        padding: 1rem 1rem;
     }
 }
