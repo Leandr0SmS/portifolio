@@ -85,8 +85,9 @@
 
 .hidden {
   visibility: hidden;
+  position: absolute;
   opacity: 0;
-  transition: visibility 0s linear 1s, opacity 1s;
+  transition: visibility 0s linear 0s, opacity 0s;
 }
 
 #more_info_img {
