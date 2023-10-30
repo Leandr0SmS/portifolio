@@ -26,11 +26,11 @@ const WelcomeMoreInfo = () => {
         <div id="more_info">
             <img id="more_info_img" src="./resources/images/avatar.png" alt="profile picture"/>
             <p  id="more_info_text">
-                I am a web developer with experience in personal projects, front-end and back-end,
-                who loves new challenges. I am a professional in career transition, I have experience
-                professional as a commercial pilot that allowed me to work with complex systems,
-                human management and risk management.
-                I can adapt well under pressure and I am motivated to learn and contribute.
+                I am a Full Stack Web Developer with experience in personal projects, 
+                who loves new challenges.<br/>
+                I worked as commercial pilot that allowed me to work with complex systems, 
+                human and risk management. I can adapt well under pressure and 
+                I am motivated to learn and contribute.
             </p>
         </div>
     )
