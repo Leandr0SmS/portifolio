@@ -21,9 +21,9 @@ const NavBar = () => {
     )
 };
 
-const WelcomeMoreInfo = () => {
+const WelcomeMoreInfo = ({ toggleStatus }) => {
     return (
-        <div id="more_info">
+        <div id="more_info" className={toggleStatus ? "visible" : "hidden"}>
             <img id="more_info_img" src="./resources/images/avatar.png" alt="profile picture"/>
             <p  id="more_info_text">
                 I am a Full Stack Web Developer with experience in personal projects, 
@@ -55,11 +55,7 @@ const WelcomeSection = () => {
                 alt="expanded arrow icon" 
                 onClick={handleToggle}
             />
-            {
-                toggle
-                ? <WelcomeMoreInfo/>
-                : undefined
-            }
+            <WelcomeMoreInfo toggleStatus={toggle}/>
         </div>
         </section>
     )

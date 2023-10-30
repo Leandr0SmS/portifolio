@@ -77,6 +77,18 @@
   padding: 1rem 3rem;
 }
 
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 1s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 1s, opacity 1s;
+}
+
 #more_info_img {
   border-radius: 50%;
   width: 20%;
