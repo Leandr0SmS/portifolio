@@ -65,7 +65,7 @@
 }
 
 #expand_icon {
-  width: 3rem;
+  width: 2.5rem;
 }
 #expand_icon:hover {
   cursor: pointer;
@@ -74,7 +74,7 @@
 #more_info {
   font-size: 0.55em;
   max-width: 50rem;
-  padding: 1rem 3rem;
+  padding: 0rem 3rem 1rem 3rem;
 }
 
 .visible {
@@ -92,15 +92,16 @@
 
 #more_info_img {
   border-radius: 50%;
-  width: 20%;
+  width: 15%;
   min-width: 13rem;
   max-width: 25rem;
 }
 
 #more_info_text {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   line-height: 1.3em;
   letter-spacing: 0.04em;
+  font-size: 0.7em;
 }
 
 @media (max-width: 655px) {

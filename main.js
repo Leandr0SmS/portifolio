@@ -24,13 +24,19 @@ const NavBar = () => {
 const WelcomeMoreInfo = ({ toggleStatus }) => {
     return (
         <div id="more_info" className={toggleStatus ? "visible" : "hidden"}>
-            <img id="more_info_img" src="./resources/images/avatar.png" alt="profile picture"/>
+            <img id="more_info_img" src="./resources/images/foto_cv-3111.jpg" alt="profile picture"/>
             <p  id="more_info_text">
-                I am a Full Stack Web Developer with experience in personal projects, 
-                who loves new challenges.<br/>
-                I worked as commercial pilot that allowed me to work with complex systems, 
-                human and risk management. I can adapt well under pressure and 
-                I am motivated to learn and contribute.
+            I currently work as an Airline Pilot for a major Brazilian carrier. 
+            My expertise lies in the efficient management of complex systems 
+            and the mitigation of risks within high-pressure aviation environments.<br/>
+            Leveraging the opportunity presented by the pandemic, 
+            I temporarily suspended my aviation career to pursue a new endeavor in sustainable agriculture. 
+            I implemented Syntropic Agriculture principles to revitalize degraded ecosystems 
+            and contribute to a more environmentally conscious food production.
+            In parallel, I've been pursuing software development studies at PUC-RJ and FreeCodeCamp, 
+            working on personal projects that have sparked my interest in AI systems and data science.<br/>
+            Driven by a passion for continuous learning and solving complex problems, 
+            I thrive on challenges and am driven to continuously learn and contribute to innovative solutions.
             </p>
         </div>
     )
