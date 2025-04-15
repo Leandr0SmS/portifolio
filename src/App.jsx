@@ -1,7 +1,6 @@
 import { projectsData } from "./projects.js";
 
-const { useState, useEffect } = React;
-const { createRoot } = ReactDOM;
+import React, { useState } from 'react';
 
 const NavBar = () => {
     return (
@@ -135,7 +134,4 @@ const App = () => {
     )
 };
 
-//Render
-const app = document.getElementById('root');
-const root = createRoot(app);
-root.render(<App/>);
+export default App;
