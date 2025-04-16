@@ -1,8 +1,8 @@
-@import 'base';
-@import 'navbar';
-@import 'welcome';
-@import 'projects';
-@import 'contact';
+@use 'variables' as *;
+@use 'navbar';
+@use 'welcome';
+@use 'projects';
+@use 'contact';
 
 *, *::after, *::before {
     box-sizing: border-box;

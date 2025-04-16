@@ -30,7 +30,7 @@ dist-ssr
 
 # Ambiente de desenvolvimento
 .DS_Store
-.env.local
+.env
 .env.development
 .env.production
 .env.test

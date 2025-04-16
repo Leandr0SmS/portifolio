@@ -2,6 +2,7 @@
   "name": "portifolio",
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/Leandr0SmS/portifolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +11,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://leandrosms.com/",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
