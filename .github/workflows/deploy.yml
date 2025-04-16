@@ -20,6 +20,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Polyfill crypto
+        run: |
+          node polyfill-crypto.js
+
       - name: Build project
         run: npm run build
 
