@@ -30,7 +30,7 @@ jobs:
           node polyfill-crypto.js
 
       # Executa o build
-      - run: npm run build
+      - run: npx run build
 
       # Publica no GitHub Pages
       - uses: peaceiris/actions-gh-pages@v3
