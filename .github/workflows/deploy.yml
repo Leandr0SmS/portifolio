@@ -13,29 +13,18 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Configura o Node.js na versão 16
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
 
-      # Define o ambiente como produção para o Vite
-      - name: Set NODE_ENV to production
-        run: echo "NODE_ENV=production" >> $GITHUB_ENV
+      - name: Install dependencies
+        run: npm install
 
-      # Instala as dependências
-      - run: npm install
+      - name: Build project
+        run: npm run build
 
-      # Adiciona um polyfill para o crypto caso necessário
-      - name: Polyfill crypto
-        run: |
-          echo "import { createRequire } from 'module'; const require = createRequire(import.meta.url); require('crypto');" > polyfill-crypto.js
-          node polyfill-crypto.js
-
-      # Executa o build
-      - run: npx run build
-
-      # Publica no GitHub Pages
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
