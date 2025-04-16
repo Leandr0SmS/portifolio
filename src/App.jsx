@@ -71,7 +71,7 @@ const Projects = ({ projects }) => {
     const projectsLinks = projects.map(p => {
         return (
             <a className="project" href={p.url} target="_blank" key={p.id}>
-                <img className="project-image" src={`../resources/images/${p.image}`} alt="project"/>
+                <img className="project-image" src={`./resources/images/${p.image}`} alt="project"/>
                 <p className="project-title">
                     <span className="code">{'< '}</span>
                     {p.name}
@@ -99,23 +99,23 @@ const Contact = () => {
             </div>
             <div className="contact-links">
                 <a id="profile-link" className="contact-detail" href="https://github.com/Leandr0SmS" target="_blank">
-                    <img className="icon" src="../resources/icons/github.png" alt=""/>
+                    <img className="icon" src="./resources/icons/github.png" alt=""/>
                     GitHub
                 </a>
                 <a className="contact-detail" target="_blank" href="https://www.instagram.com/leandr0simoes/">
-                    <img className="icon" src="../resources/icons/instagram.png" alt=""/>
+                    <img className="icon" src="./resources/icons/instagram.png" alt=""/>
                     Instagram
                 </a>
                 <a className="contact-detail" href="https://www.freecodecamp.org/LeandroSmS" target="_blank">
-                    <img className="icon" src="../resources/icons/freecodecamp.png" alt=""/>
+                    <img className="icon" src="./resources/icons/freecodecamp.png" alt=""/>
                     FreeCodeCamp
                 </a>
                 <a className="contact-detail" href="https://www.linkedin.com/in/leandrosimoesms/" target="_blank">
-                    <img className="icon" src="../resources/icons/linkedin.png" alt=""/>
+                    <img className="icon" src="./resources/icons/linkedin.png" alt=""/>
                     linkedin
                 </a>
                 <a className="contact-detail" href="mailto:leandrosimoesms@gmail.com" target="_blank">
-                    <img className="icon" src="../resources/icons/email.png" alt=""/>
+                    <img className="icon" src="./resources/icons/email.png" alt=""/>
                     Send a mail
                 </a>
             </div>
