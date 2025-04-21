@@ -69,10 +69,13 @@
 
 @media (max-width: 655px) {
     .title {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     #more_info {
-        padding: 1rem 1rem;
-        font-size: 0.4em;
+        padding: 0.3rem 1rem;
+        font-size: 0.8em;
+    }
+    #more_info_img {
+        display: none;
     }
 }
