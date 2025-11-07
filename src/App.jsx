@@ -93,7 +93,7 @@ const Projects = ({ projects }) => {
 
 const Contact = () => {
     return (
-        <section id="contact" className="contact-section">
+        <address id="contact" className="contact-section">
             <div className="contact-header">
                 <h2>Let`s Work...</h2>
             </div>
@@ -119,17 +119,24 @@ const Contact = () => {
                     Send a mail
                 </a>
             </div>
-        </section>
+        </address>
     )
 };
 
 const App = () => {
     return (
         <React.Fragment>
-            <NavBar/>
-            <WelcomeSection/>
-            <Projects projects={projectsData} />
-            <Contact/>
+            <header>
+                <NavBar/> 
+            </header>
+            <main>
+                <WelcomeSection/>
+                <Projects projects={projectsData} />
+            </main>
+            <footer>
+                <Contact/>
+                <p id="copyright">&copy; 2023 Leandro. All rights reserved.</p>
+            </footer>
         </React.Fragment>
     )
 };

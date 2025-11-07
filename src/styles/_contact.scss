@@ -43,6 +43,13 @@
     max-width: 3rem;
 }
 
+#copyright {
+    margin: 0.7rem;
+    font-size: 0.9rem;
+    color: $crem;
+    text-align: center;
+}
+
 @media (max-width: 655px) {
     .contact-section {
         padding: 0 2rem;
