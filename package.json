@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/Leandr0SmS/portifolio.git"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "crypto-browserify": "^3.12.1",
