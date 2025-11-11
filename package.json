@@ -2,14 +2,14 @@
   "name": "portifolio",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Leandr0SmS/portifolio",
+  "homepage": "https://Leandr0SmS.github.io/portifolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/Leandr0SmS/portifolio.git"
   },
   "dependencies": {
     "crypto-browserify": "^3.12.1",
