@@ -51,17 +51,17 @@ const WelcomeSection = () => {
 
     return (
         <section id="welcome-section">
-        <div className={toggle ? "title expand" : "title"}>
-            <h1>Hey I am Leandro</h1>
-            <p id="subtitle">web developer</p>
-            <img 
-                id="expand_icon" 
-                src={toggle ? "./resources/icons/expand_less_icon.svg" : "./resources/icons/expand_more_icon.svg"} 
-                alt="expanded arrow icon" 
-                onClick={handleToggle}
-            />
-            <WelcomeMoreInfo toggleStatus={toggle}/>
-        </div>
+            <div className={toggle ? "title expand" : "title"}>
+                <h1 className={!toggle ? "visible" : "hidden"}>Hey I am Leandro</h1>
+                <p id="subtitle" className={!toggle ? "visible" : "hidden"}>web developer</p>
+                <img 
+                    id="expand_icon" 
+                    src={toggle ? "./resources/icons/expand_less_icon.svg" : "./resources/icons/expand_more_icon.svg"} 
+                    alt="expanded arrow icon" 
+                    onClick={handleToggle}
+                />
+                <WelcomeMoreInfo toggleStatus={toggle}/>
+            </div>
         </section>
     )
 };
