@@ -9,7 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run deploy:split && npm run deploy:push && npm run deploy:clean",
+    "deploy:split": "git branch -D deploy-temp 2>nul & git subtree split --prefix dist -b deploy-temp",
+    "deploy:push": "git push --force origin deploy-temp:gh-pages",
+    "deploy:clean": "git branch -D deploy-temp"
   },
   "dependencies": {
     "react": "^19.0.0",
