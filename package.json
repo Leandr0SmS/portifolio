@@ -27,7 +27,6 @@
     "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "sass": "^1.86.3",
-    "vite": "^6.2.0",
-    "vite-prerender-plugin": "^0.5.13"
+    "vite": "^6.2.0"
   }
 }
