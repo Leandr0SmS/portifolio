@@ -94,10 +94,11 @@
 }
 
 #more_info_img {
-  border-radius: 50%;
-  width: 15%;
+  width: 40%;
   min-width: 13rem;
   max-width: 25rem;
+  -webkit-mask-image: radial-gradient(ellipse at center, black -30%, transparent 100%);
+  mask-image: radial-gradient(ellipse at center, black -30%, transparent 100%);
 }
 
 #more_info_text {

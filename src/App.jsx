@@ -23,7 +23,7 @@ const NavBar = () => {
 const WelcomeMoreInfo = ({ toggleStatus }) => {
     return (
         <div id="more_info" className={toggleStatus ? "visible" : "hidden"}>
-            <img id="more_info_img" src="./resources/images/foto_cv-3111.jpg" alt="profile picture"/>
+            <img id="more_info_img" src="./resources/images/foto_cv-3111-bw.jpg" alt="profile picture"/>
             <p  id="more_info_text">
             I currently work as an Airline Pilot for a major Brazilian carrier. 
             My expertise lies in the efficient management of complex systems 
